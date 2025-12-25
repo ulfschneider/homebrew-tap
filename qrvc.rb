@@ -5,21 +5,21 @@
 class Qrvc < Formula
   desc "Use the command line to make a QR code from a vCard"
   homepage "https://github.com/ulfschneider/qrvc"
-  version "0.10.8"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ulfschneider/qrvc/releases/download/v0.10.8/qrvc_Darwin_x86_64.tar.gz"
-      sha256 "2bafdd762443841909cce9846307be59d95453330a8bced672136d03f530d6ce"
+      url "https://github.com/ulfschneider/qrvc/releases/download/v0.11.0/qrvc_Darwin_x86_64.tar.gz"
+      sha256 "73be96cf98142b820db5e3a980fd5488be8a86176d4fcd4d5c08c4836b08d855"
 
       def install
         bin.install "qrvc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ulfschneider/qrvc/releases/download/v0.10.8/qrvc_Darwin_arm64.tar.gz"
-      sha256 "256687baa084b741e0e10a72cbbf549f6214da994e73e3f2fd9df660920c1ec2"
+      url "https://github.com/ulfschneider/qrvc/releases/download/v0.11.0/qrvc_Darwin_arm64.tar.gz"
+      sha256 "bc150b387a19d58d2e5dae035ce36bc27d3bec889afc7f32ddeff8dcaf7705f5"
 
       def install
         bin.install "qrvc"
@@ -29,15 +29,15 @@ class Qrvc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschneider/qrvc/releases/download/v0.10.8/qrvc_Linux_x86_64.tar.gz"
-      sha256 "5b4e9c781b5350a8f6a656029b9085e9914578514415efbaf2d8feb4bfe10ef3"
+      url "https://github.com/ulfschneider/qrvc/releases/download/v0.11.0/qrvc_Linux_x86_64.tar.gz"
+      sha256 "732bed0dd8085ba18659b8841f05995ebe8bbb28e41906bb70ea8f4f8d01a2cf"
       def install
         bin.install "qrvc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ulfschneider/qrvc/releases/download/v0.10.8/qrvc_Linux_arm64.tar.gz"
-      sha256 "aaf8e442219fd9657ea5436d8df874d144c6ca113281f1069a96c83436447981"
+      url "https://github.com/ulfschneider/qrvc/releases/download/v0.11.0/qrvc_Linux_arm64.tar.gz"
+      sha256 "3d1ca8ed9119d3cb506e665480e0151e965158513a29ea7abec58fe33f54179c"
       def install
         bin.install "qrvc"
       end
